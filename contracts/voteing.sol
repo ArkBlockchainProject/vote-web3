@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-
+//请根据solidity版本来更改此选项
 contract Voting {
   /*
   mapping：称为映射或者字典，一种键值对的映射关系存储结构
@@ -9,7 +9,7 @@ contract Voting {
   uint8类型：能存储8个字节，即8*8=64位的二进制内容
   */
   mapping (bytes32 => uint8) public votesReceived;
-
+  //public是solidity最新引入的一项功能，是为了防止用户将函数设置为私有函数所导致的安全问题，此处不可将public更改为其他选项。
   /*
   Solidity目前不允许字符串数组，这里使用bytes32类型的数组来存储候选人名字
   */
